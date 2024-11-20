@@ -77,6 +77,16 @@ export const Message = ({
                       <div key={toolCallId}>
                         <Tracker trackingInformation={result} />
                       </div>
+                    ) : toolName === "generateDescriptions" ? (
+                      <div
+                        key={toolCallId}
+                        className="flex flex-col gap-2 border border-zinc-200 dark:border-zinc-800 rounded-md p-4"
+                      >
+                        <p>Tool Called</p>
+                        <p className="text-zinc-800 dark:text-zinc-300">
+                          {result.content}
+                        </p>
+                      </div>
                     ) : null}
                   </div>
                 );

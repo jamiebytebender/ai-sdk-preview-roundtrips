@@ -2,6 +2,7 @@ export interface Order {
   id: string;
   name: string;
   orderedAt: string;
+  description: string;
   image: string;
 }
 
@@ -9,18 +10,22 @@ export const ORDERS: Order[] = [
   {
     id: "412093",
     name: "Apple Watch Ultra 2",
+    description:
+      "A high-end smartwatch with a built-in GPS and blood oxygen sensor.",
     orderedAt: "2024-08-26",
     image: "watch.png",
   },
   {
     id: "539182",
     name: "Apple TV",
+    description: "A high-end smart TV with a built-in Apple TV app.",
     orderedAt: "2024-08-25",
     image: "tv.png",
   },
   {
     id: "281958",
     name: "Apple iPhone 14 Pro",
+    description: "A high-end smartphone with a built-in camera.",
     orderedAt: "2024-08-24",
     image: "iphone.png",
   },

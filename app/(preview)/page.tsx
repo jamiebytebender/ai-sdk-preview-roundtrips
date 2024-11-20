@@ -26,6 +26,11 @@ export default function Home() {
       label: "have shipped?",
       action: "what orders have shipped?",
     },
+    {
+      title: "Generate descriptions",
+      label: "for all orders",
+      action: "generate descriptions for all orders",
+    },
   ];
 
   return (

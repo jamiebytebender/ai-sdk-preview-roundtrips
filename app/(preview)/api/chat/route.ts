@@ -24,6 +24,13 @@ export async function POST(request: Request) {
           return orders;
         },
       },
+      generateDescriptions: {
+        description: "Generates descriptions for all orders",
+        parameters: z.object({ content: z.string() }),
+        execute: async (result) => {
+          return result as { content: string };
+        },
+      },
       viewTrackingInformation: {
         description: "view tracking information for a specific order",
         parameters: z.object({
